@@ -1,7 +1,9 @@
+/* How to use *
 public static void Main()
 {
 	Console.WriteLine(RegexLib.KfzVersicherung.KfzKennzeichen.Transform("hh-rr 123"));
 }
+*/
 
 public sealed class RegexLib
 {
