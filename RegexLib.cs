@@ -26,7 +26,7 @@ public sealed class RegexLib
 
 	    public static readonly RegExMatcher Vertragsnummer = new RegExMatcher( VertragsnummerExpression );
 	    public static readonly RegExPattern KfzKennzeichen = new RegExPattern( KfzKennzeichenExpression, (groups) => string.Format("{0}-{1}-{2}", groups["city"], groups["letters"], groups["digits"]).ToUpper());
-		public static readonly RegExConverter<Kennzeichen> KfzKennzeichenConverter = new RegExConverter<Kennzeichen>( KfzKennzeichenExpression, (groups) => new Kennzeichen { City = groups["city"].Value, Letters = groups["letters"].Value, Number = groups["digits"].Value });
+	    public static readonly RegExConverter<Kennzeichen> KfzKennzeichenConverter = new RegExConverter<Kennzeichen>( KfzKennzeichenExpression, (groups) => new Kennzeichen { City = groups["city"].Value, Letters = groups["letters"].Value, Number = groups["digits"].Value });
 	}
 }
 
